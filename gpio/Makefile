@@ -30,7 +30,7 @@ PREFIX?=/local
 DEBUG	= -O2
 CC	?= gcc
 INCLUDE	= -I$(DESTDIR)$(PREFIX)/include
-CFLAGS	+= $(DEBUG) -Wall $(INCLUDE) -Winline -pipe
+CFLAGS	+= $(DEBUG) -Wall $(INCLUDE) -Winline -pipe -fPIC
 
 LDFLAGS	= -L$(DESTDIR)$(PREFIX)/lib
 LIBS    = -lwiringPi -lwiringPiDev -lpthread -lm
